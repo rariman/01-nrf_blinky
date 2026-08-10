@@ -1,0 +1,15 @@
+mainmenu "Blinky Application Configuration"
+
+config BLINKY_ENABLE
+    bool "Enable Blinky"
+    default y
+    help
+      Enable the Blinky application.
+
+config BLINKY_INTEVAL
+    int "Blinky interval (ms)"
+    default 1000
+    help
+      Interval in milliseconds for the LED to blink.
+
+source "Kconfig.zephyr"
